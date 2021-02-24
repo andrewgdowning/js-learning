@@ -24,3 +24,27 @@ console.log(firstName.length)
 console.log(fullName.toUpperCase()) // ANDREW DOWNING
 console.log(fullName.indexOf("D")) // 7 this finds the index location of "D"
 
+/* More string methods */
+let email = "example@example.com"
+// Find the index position of the last c
+console.log(email.lastIndexOf("c")); // 16
+// Find a string between two characters
+console.log(email.slice(2,5)); // amp
+// Get a substring of a certain length
+console.log(email.substr(2,5)) // Start at index 2 and get 5 chars 'ample'
+// Replace specific characters
+console.log(email.replace("n","w")) // replaces the first n for w
+// The replace method can be used with regex for pattern matching
+
+/* Numbers */
+// In 
+let radius = 10; // set a radius variable
+const pi = 3.14; // pi will always remain the same
+
+// Math operators +,-,*,/,**,%
+console.log(10+10) // addition result 20
+console.log(3-1) // 2
+console.log()
+console.log()
+console.log()
+console.log()
