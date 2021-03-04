@@ -44,7 +44,27 @@ const pi = 3.14; // pi will always remain the same
 // Math operators +,-,*,/,**,%
 console.log(10+10) // addition result 20
 console.log(3-1) // 2
-console.log()
-console.log()
-console.log()
-console.log()
+console.log(2*2) // 4
+console.log(6/3) // 2
+console.log(2**3) // 8
+console.log(7%3) // Modulo means the remainder 3 goes into 7 twice remainder 1
+
+// Order of operations = BIDMAS
+
+// Other operators when using variables
+let likes = 10;
+// We can increment by 1 in shorthand by using ++
+likes++
+console.log(likes) // 11
+// This works for substraction also
+likes--
+console.log(likes) // 10
+// When using operators on a variable the shorthand (operation)= can be used
+// e.g. += , -=, /=, *=
+likes+=20
+console.log(likes) // 30
+
+/* Nan */
+// Nan = not a number e.g. trying to multiply a string to by integer
+console.log(5 * 'hello');
+
