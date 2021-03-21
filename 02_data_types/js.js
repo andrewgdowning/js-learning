@@ -36,6 +36,17 @@ console.log(email.substr(2,5)) // Start at index 2 and get 5 chars 'ample'
 console.log(email.replace("n","w")) // replaces the first n for w
 // The replace method can be used with regex for pattern matching
 
+/* Template literals */
+// When adding strings to variables then template literals can be used
+// Ths is useful for wokring with html
+const title = "Best reads of 2019";
+const author = "Andrew"
+const like = 30
+let header = `The blog ${title} by ${author} has ${like} likes`
+console.log(header)
+let html = `<h1>${title}</h1>`
+console.log(html)
+
 /* Numbers */
 // In 
 let radius = 10; // set a radius variable
@@ -68,3 +79,14 @@ console.log(likes) // 30
 // Nan = not a number e.g. trying to multiply a string to by integer
 console.log(5 * 'hello');
 
+/* Arrays */
+// Arrays store a collection of data
+let films = ["Harry Potter", "Star Wars", "Lord of the Rings"]
+console.log(films)
+// Retrieving items in an array
+console.log(films[0]) // Harry Potter
+// Overriding positions in an array
+films[1] = "I am your father"
+console.log(films[1])
+
+/* Array properties and methods */
