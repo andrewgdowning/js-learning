@@ -94,12 +94,28 @@ let resultOne = films.join("-") // Joins the items in the array into one string 
 console.log(resultOne) 
 let resultTwo = films.indexOf("Star Wars") // Finds the index 1
 console.log(resultTwo)
-let resultThree = films.concat(["Marvel Films","Friends"]) // Concatenates only in the new variable (non destructive)
-console.log(resultThree) // This has the new films concatenated
-console.log(films) // The original variable is unchanges
-let resultFour = films.push("Big Brother") // This is a destructive method as it modified the original vale
-console.log(resultFour) // This outputs the size of the new list, in this case 4
-console.log(films) // the original variable has been changed to contain 4
-let resultFive = films.pop("Big Brother") // This is also a destructive method and will modify the original variable
-console.log(resultFive) // 3
-console.log(films) // the original variable has been modified and big brother removed
+let resultThree = films.concat(["Marvel Films","Friends"]); // Concatenates only in the new variable (non destructive)
+console.log(resultThree); // This has the new films concatenated
+console.log(films); // The original variable is unchanges
+let resultFour = films.push("Big Brother"); // This is a destructive method as it modified the original vale
+console.log(resultFour); // This outputs the size of the new list, in this case 4
+console.log(films); // the original variable has been changed to contain 4
+let resultFive = films.pop("Big Brother"); // This is also a destructive method and will modify the original variable
+console.log(resultFive); // 3
+console.log(films); // the original variable has been modified and big brother removed
+
+/* Null and Undefined */
+// Null is an intentional lack of value
+// Undefined is unintentional
+let age 
+console.log(age, age + 3, `the age is ${age}`);
+// The three results will be as follows
+// Undefined as the variable hasn't been set and has no type
+// NaN as we are tyring to add to an undefined type
+// 'The age is undefined' will be logged
+let years = null
+console.log(years, years + 3, `the age is ${years}`);
+// The three results will be as follows
+// null as the variable has been set up but with no value. It has been left empty
+// 3
+// 'The age is null' will be logged
