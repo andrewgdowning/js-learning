@@ -90,3 +90,16 @@ films[1] = "I am your father"
 console.log(films[1])
 
 /* Array properties and methods */
+let resultOne = films.join("-") // Joins the items in the array into one string separated by -
+console.log(resultOne) 
+let resultTwo = films.indexOf("Star Wars") // Finds the index 1
+console.log(resultTwo)
+let resultThree = films.concat(["Marvel Films","Friends"]) // Concatenates only in the new variable (non destructive)
+console.log(resultThree) // This has the new films concatenated
+console.log(films) // The original variable is unchanges
+let resultFour = films.push("Big Brother") // This is a destructive method as it modified the original vale
+console.log(resultFour) // This outputs the size of the new list, in this case 4
+console.log(films) // the original variable has been changed to contain 4
+let resultFive = films.pop("Big Brother") // This is also a destructive method and will modify the original variable
+console.log(resultFive) // 3
+console.log(films) // the original variable has been modified and big brother removed
