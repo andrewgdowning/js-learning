@@ -119,3 +119,50 @@ console.log(years, years + 3, `the age is ${years}`);
 // null as the variable has been set up but with no value. It has been left empty
 // 3
 // 'The age is null' will be logged
+
+/* Booleans */
+// Represent true and false
+console.log(true,false)
+// This is not the same as 
+console.log("true","false")
+// As this will be interpreted as a string
+// Booleans are used for evaluation
+let userEmail = 'email@email.com'
+let emailCheck = email.includes('@') // This will return a boolean
+console.log(emailCheck)
+// Comparison operators
+let userAge = 29;
+console.log(age == 29); // True - When using comparison operators this will log true or false
+console.log(age == 30); // False
+console.log(age != 30); // True - this is not equal
+console.log(age != 29); // False
+console.log(age > 20); // True - greater than
+console.log(age < 20); // False - less than
+console.log(age <= 29); // True - greater than or equal to
+console.log(age >= 29); // True - less than or equal to
+
+let userName = "Andrew"
+console.log(userName == "Andrew") // True
+console.log(userName == "andrew") // True
+console.log(userName == "Ellie") // False
+// == is known as abstract or loose equality i.e. we aren't checking the type
+console.log(1 == '1') // True even though they are different types
+console.log(1 === '1') // False as here we are checking the string type
+
+/* Type conversion */
+// Turning one data type into another
+let score = '100';
+// Convert string to number
+score = Number(score)
+console.log(score + 20); 
+console.log(typeof score) // You can check the type using typeof
+// Conver to string
+let test = 200;
+test = String(test);
+console.log(typeof test)
+// Booleans can also be represented by numbers 0 = false +ve = true
+let truthy = Boolean(1)
+console.log(truthy)
+let falsy = Boolean(0)
+console.log(falsy)
+
