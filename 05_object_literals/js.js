@@ -41,3 +41,26 @@ let phone = {
 // using the object method
 phone.call()
 // logs 'calling 1234'
+
+// When working with data it is common to see objects in arrays
+let blogs = [
+    {title: 'Welcome to my site', likes: 10},
+    {title: 'What to do with your weekend', likes: 11},
+    {title: 'The top 10 books', likes: 12}
+];
+
+// Prints each title and the number of likes
+blogs.forEach(blog => {
+    console.log(`The blog titled ${blog.title} has ${blog.likes} likes.`)
+});
+
+// Another common default object is the math object.
+// It has properties and arrays that can be access to perform math operaitons
+console.log(Math.PI) // logs Pi
+console.log(Math.floor(7.2)) // 7
+console.log(Math.round(7.3)) // 7
+
+// Random number generation
+let randomNumber = Math.random() // Random number between 0 and 1
+console.log(randomNumber)
+
