@@ -75,3 +75,12 @@ names.sort();
 console.log(names)
 names.reverse(); // We can use reverse also to flip the order
 console.log(names);
+
+/* Array method chaining */
+
+let promotions = products
+    .filter(product => product.price < 50)
+    .map(product => {
+        return {name: product.name, price: product.price / 2}
+    })
+console.log(promotions);
