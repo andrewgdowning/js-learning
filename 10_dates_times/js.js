@@ -2,6 +2,7 @@
 // Dates in Javascript are a type of data under the object type
 // they are reference types, not primitive data types
 // a constructor is used to create a new object
+
 // here we use the new and date()constructor to designate a new object of date type
 const now = new Date(); // This creates a date object that will always return the current time and date
 console.log(now)
@@ -64,12 +65,8 @@ setInterval(() => {
 // Sometimes formatting in vanilla JS can be time consuming. 
 // we can use a library to make this easier
 // https://date-fns.org/
-import { format, compareAsc } from 'date-fns'
 
-
-
-
-
-
+dateOne = new Date();
+console.log(dateFns.isToday(dateOne))
 
 
