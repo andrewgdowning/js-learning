@@ -60,6 +60,15 @@ setInterval(() => {
     clock.textContent = `${hours} : ${minutes} : ${seconds}`
 }, 200);
 
+/* Date-fns lib */
+// Sometimes formatting in vanilla JS can be time consuming. 
+// we can use a library to make this easier
+// https://date-fns.org/
+import { format, compareAsc } from 'date-fns'
+
+
+
+
 
 
 
