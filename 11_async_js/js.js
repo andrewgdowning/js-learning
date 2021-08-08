@@ -151,9 +151,11 @@ getTodosPromise('https://jsonplaceholder.typicode.com/todos/1').then((data) => {
 // a newer way to make network requests which incorporates promises 
 // less code is required 
 // fetch returns a promise
-fetch('https://jsonplaceholder.typicode.com/todos/1').then((response) => {
-    console.log('resolved with fetch', response.json())
-}).catch((err) => {
-    console.log('rejected with fetch', err)
+// first we set up the fetch call with the resource as the param, fetch returns a promise so we can immediately use .then() to handle the resolve
+fetch('https://jsonplaceholder.typicode.com/todos/1').then(response => {
+    return response.JSON();
+}).then(data => {
+    console.log('Data with fetch', data);
+}).catch(err => {
+    console.log('rejected', err);
 });
-// fetch catch error handling works differently... it will only identify errors on network request
